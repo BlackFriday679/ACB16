@@ -14,7 +14,6 @@ public class _04RelationalOperations {
 //        System.out.println(a > b);
 
         result = a == b;
-
         result = a != b;
 
 
