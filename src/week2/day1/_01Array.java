@@ -10,6 +10,8 @@ public class _01Array {
         int[] numbers = {1, 15, 12, 0};
 
 
+
+
 //      <data_type>[] <variable_name> = new <data_type>[<size>];
 
         int[] numbers2 = new int[4];
