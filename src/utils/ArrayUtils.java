@@ -19,6 +19,14 @@ public class ArrayUtils {
         return array;
     }
 
+    public static int[] createRandomArray(int size, int min, int max){
+        int[] array = new int[size];
+        for (int i = 0; i <size ; i++) {
+            array[i] = (int)(min + Math.random() * (max - min));
+        }
+        return array;
+    }
+
 
 
     public static void printArray(int[] array){
@@ -62,4 +70,19 @@ public class ArrayUtils {
         return average;
     }
 
+    public static void sort(int[] array) {
+
+        for (int j = array.length; j > 0 ; j--) {
+            for (int i = 0; i < j - 1;  i++) {
+                if(array[i] > array[i + 1]){
+//                swap
+                    int tmp = array[i];
+                    array[i] = array[i + 1];
+                    array[i + 1] = tmp;
+                }
+            }
+        }
+
+
+    }
 }
